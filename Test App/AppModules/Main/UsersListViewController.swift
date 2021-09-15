@@ -25,6 +25,9 @@ class UsersListViewController: UIViewController,UITableViewDelegate,UITableViewD
         addUserButton.setRoundedCorners()
         NotificationCenter.default.addObserver(self, selector: #selector(didAddNewUser), name: .didAddNewUser, object: nil)
     }
+    override func viewDidAppear(_ animated: Bool) {
+        self.navigationController?.navigationBar.topItem?.title = "Users";
+    }
     @objc func didAddNewUser(){
         users = RealmHelpers.getUsers()
         self.usersTableView.reloadData()
@@ -32,6 +35,7 @@ class UsersListViewController: UIViewController,UITableViewDelegate,UITableViewD
     private func initTableView() {
         usersTableView.delegate = self
         usersTableView.dataSource = self
+        usersTableView.contentInset.bottom = 100
         usersTableView.register(UINib.init(nibName: "UserTableViewCell", bundle: nil), forCellReuseIdentifier: "UserTableViewCell")
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

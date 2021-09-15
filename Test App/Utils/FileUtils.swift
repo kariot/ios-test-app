@@ -31,9 +31,7 @@ class FileUtils {
         }
         
     }
-    
-    
-    
+
     class func loadImageFromDiskWith(fileName: String) -> UIImage? {
         let documentDirectory = FileManager.SearchPathDirectory.documentDirectory
         let userDomainMask = FileManager.SearchPathDomainMask.userDomainMask

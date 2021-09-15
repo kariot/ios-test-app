@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Users-->
+        <!--Users List View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController storyboardIdentifier="UsersListViewController" id="BYZ-38-t0r" customClass="UsersListViewController" customModule="Test_App" customModuleProvider="target" sceneMemberID="viewController">
@@ -52,7 +52,7 @@
                             <constraint firstItem="o1R-ZX-mlX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="evI-yQ-hAi"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Users" id="dRw-1v-BwO"/>
+                    <navigationItem key="navigationItem" id="dRw-1v-BwO"/>
                     <connections>
                         <outlet property="addUserButton" destination="QX1-Tg-9qY" id="Yec-2G-GOz"/>
                         <outlet property="usersTableView" destination="o1R-ZX-mlX" id="Ye5-MJ-sMX"/>
@@ -169,7 +169,7 @@
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="10"/>
+                                        <real key="value" value="20"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -183,7 +183,7 @@
                             <constraint firstItem="YhC-0m-QC3" firstAttribute="trailing" secondItem="M5b-yr-2Ug" secondAttribute="trailing" constant="12" id="vcE-O2-DyJ"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Preview" id="lQE-Kk-Kzp"/>
+                    <navigationItem key="navigationItem" title="Preview" largeTitleDisplayMode="never" id="lQE-Kk-Kzp"/>
                     <connections>
                         <outlet property="userEmailLabel" destination="wvD-68-bPb" id="feg-u5-Kks"/>
                         <outlet property="userImageView" destination="4N7-XR-3rs" id="Z3P-Gc-9zQ"/>
@@ -491,7 +491,7 @@
                             <constraint firstItem="kqO-p2-ov6" firstAttribute="trailing" secondItem="bVx-xL-EXt" secondAttribute="trailing" constant="12" id="hf4-e6-tIT"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="EYw-Oe-M5X"/>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="EYw-Oe-M5X"/>
                     <connections>
                         <outlet property="avartarImageVIew" destination="pZe-Gt-ZX1" id="BZZ-fb-UNb"/>
                         <outlet property="backgroundView" destination="bVx-xL-EXt" id="MIz-eg-aPZ"/>

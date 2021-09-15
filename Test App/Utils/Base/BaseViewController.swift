@@ -11,9 +11,11 @@ class BaseViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        initNavBar()
+    }
+    private func initNavBar() {
         self.navigationController?.navigationBar.backIndicatorImage = UIImage(named: "back")
         self.navigationController?.navigationBar.backIndicatorTransitionMaskImage = UIImage(named: "back")
         self.navigationController?.navigationBar.topItem?.title = "";
-
     }
 }
