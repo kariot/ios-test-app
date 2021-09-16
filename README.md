@@ -5,6 +5,6 @@ an iOS app to demonstrate realm operations<br>
 <img src="https://i.ibb.co/TtxKj15/Simulator-Screen-Shot-i-Phone-11-2021-09-16-at-18-44-45.png" width="300">
 
 Tech Used:
-> UIKit
-> Swift
-> Realm
+- UIKit
+- Swift
+- Realm
